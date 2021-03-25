@@ -1,6 +1,6 @@
 {
   "name": "@consdata/eslint-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Consdata common ESLint rules",
   "main": "index.js",
   "scripts": {
