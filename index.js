@@ -10,8 +10,7 @@ module.exports = {
     },
     "plugins": [
         "@angular-eslint/eslint-plugin",
-        "@typescript-eslint",
-        "@typescript-eslint/tslint"
+        "@typescript-eslint"
     ],
     "rules": {
         "@angular-eslint/component-class-suffix": "off",
@@ -119,33 +118,6 @@ module.exports = {
                 "markers": [
                     "/"
                 ]
-            }
-        ],
-        "@typescript-eslint/tslint/config": [
-            "error",
-            {
-                "rules": {
-                    "import-spacing": true,
-                    "typedef": [
-                        true,
-                        "call-signature",
-                        "property-declaration",
-                        "parameter",
-                        "member-variable-declaration"
-                    ],
-                    "use-host-property-decorator": true,
-                    "use-input-property-decorator": true,
-                    "use-life-cycle-interface": true,
-                    "use-output-property-decorator": true,
-                    "whitespace": [
-                        true,
-                        "check-branch",
-                        "check-decl",
-                        "check-operator",
-                        "check-separator",
-                        "check-type"
-                    ]
-                }
             }
         ]
     }
