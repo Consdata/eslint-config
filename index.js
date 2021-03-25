@@ -12,7 +12,10 @@ module.exports = {
         'plugin:@typescript-eslint/recommended'
     ],
     rules: {
-        "@angular-eslint/component-class-suffix": "off",
+        "@angular-eslint/component-class-suffix": ["error",
+            {
+                "suffixes": ["Component"]
+            }],
         "@angular-eslint/component-selector": "off",
         "@angular-eslint/directive-class-suffix": "off",
         "@angular-eslint/directive-selector": [
