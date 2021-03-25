@@ -71,8 +71,10 @@ module.exports = {
                 "selector": "memberLike",
                 "format": [
                     "camelCase",
-                    "UPPER_CASE"
-                ]
+                    "UPPER_CASE",
+                    "PascalCase"
+                ],
+                "leadingUnderscore": "allow"
             },
             {
                 "selector": "typeLike",
