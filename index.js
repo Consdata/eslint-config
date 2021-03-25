@@ -71,6 +71,14 @@ module.exports = {
                 ]
             },
             {
+                "selector": "enumMember",
+                "format": [
+                    "snake_case",
+                    "UPPER_CASE",
+                    "camelCase"
+                ]
+            },
+            {
                 "selector": "memberLike",
                 "format": [
                     "camelCase",
@@ -96,12 +104,14 @@ module.exports = {
                 "hoist": "all"
             }
         ],
+        "no-unused-expressions": "off",
         "@typescript-eslint/no-unused-expressions": "error",
         "@typescript-eslint/no-use-before-define": "error",
         "@typescript-eslint/prefer-function-type": "error",
         "@typescript-eslint/quotes": [
             "error",
-            "single"
+            "single",
+            {"allowTemplateLiterals": true}
         ],
         "@typescript-eslint/semi": [
             "off",
@@ -122,6 +132,7 @@ module.exports = {
         "guard-for-in": "error",
         "id-blacklist": "off",
         "id-match": "off",
+        "no-prototype-builtins": "off",
         "max-len": [
             "error",
             {
