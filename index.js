@@ -35,7 +35,7 @@ module.exports = {
                 "accessibility": "explicit"
             }
         ],
-        "@typescript-eslint/indent": "error",
+        "@typescript-eslint/indent": "off",
         "@typescript-eslint/member-delimiter-style": [
             "off",
             {
@@ -49,8 +49,39 @@ module.exports = {
                 }
             }
         ],
-        "@typescript-eslint/member-ordering": "error",
-        "@typescript-eslint/naming-convention": "error",
+        "@typescript-eslint/member-ordering": [
+            "error",
+            {
+                "default": [
+                    "signature",
+                    "field",
+                    "constructor",
+                    "method"
+                ]
+            }
+        ],
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                "selector": "default",
+                "format": [
+                    "camelCase"
+                ]
+            },
+            {
+                "selector": "memberLike",
+                "format": [
+                    "camelCase",
+                    "UPPER_CASE"
+                ]
+            },
+            {
+                "selector": "typeLike",
+                "format": [
+                    "PascalCase"
+                ]
+            }
+        ],
         "@typescript-eslint/no-empty-function": "off",
         "@typescript-eslint/no-empty-interface": "error",
         "@typescript-eslint/no-explicit-any": "error",
@@ -103,7 +134,6 @@ module.exports = {
         "no-fallthrough": "error",
         "no-new-wrappers": "error",
         "no-redeclare": "error",
-        "no-restricted-imports": "error",
         "no-throw-literal": "error",
         "no-trailing-spaces": "error",
         "no-underscore-dangle": "off",
