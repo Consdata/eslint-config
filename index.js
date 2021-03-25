@@ -1,18 +1,17 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es6": true
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: 'module'
     },
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "project": "tsconfig.json",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "@angular-eslint/eslint-plugin",
-        "@typescript-eslint"
+    plugins: ['@typescript-eslint',
+        "@angular-eslint/eslint-plugin"],
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended'
     ],
-    "rules": {
+    rules: {
         "@angular-eslint/component-class-suffix": "off",
         "@angular-eslint/component-selector": "off",
         "@angular-eslint/directive-class-suffix": "off",
