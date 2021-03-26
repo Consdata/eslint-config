@@ -32,14 +32,34 @@ module.exports = {
         "@typescript-eslint/typedef": [
             "error",
             {
-                "arrayDestructuring": true,
-                "arrowParameter": true,
+                "arrayDestructuring": false,
+                "arrowParameter": false,
                 "memberVariableDeclaration": true,
-                "objectDestructuring": true,
+                "objectDestructuring": false,
                 "parameter": true,
                 "propertyDeclaration": true,
-                "variableDeclaration": true,
+                "variableDeclaration": false,
                 "variableDeclarationIgnoreFunction": false
+            }
+        ],
+        "@typescript-eslint/explicit-module-boundary-types": [
+            "error",
+            {
+                "allowArgumentsExplicitlyTypedAsAny": false,
+                "allowDirectConstAssertionInArrowFunctions": true,
+                "allowedNames": [],
+                "allowHigherOrderFunctions": true,
+                "allowTypedFunctionExpressions": true
+            }
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": false,
+                "allowTypedFunctionExpressions": true,
+                "allowHigherOrderFunctions": true,
+                "allowDirectConstAssertionInArrowFunctions": true,
+                "allowConciseArrowFunctionExpressionsStartingWithVoid": false
             }
         ],
         "@typescript-eslint/consistent-type-definitions": "error",
