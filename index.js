@@ -53,14 +53,7 @@ module.exports = {
             }
         ],
         "@typescript-eslint/explicit-function-return-type": [
-            "error",
-            {
-                "allowExpressions": false,
-                "allowTypedFunctionExpressions": true,
-                "allowHigherOrderFunctions": true,
-                "allowDirectConstAssertionInArrowFunctions": true,
-                "allowConciseArrowFunctionExpressionsStartingWithVoid": false
-            }
+            "off",
         ],
         "@typescript-eslint/consistent-type-definitions": "error",
         "@typescript-eslint/dot-notation": "off",
