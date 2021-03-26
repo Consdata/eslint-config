@@ -38,7 +38,7 @@ module.exports = {
                 "objectDestructuring": true,
                 "parameter": true,
                 "propertyDeclaration": true,
-                "variableDeclaration": false,
+                "variableDeclaration": true,
                 "variableDeclarationIgnoreFunction": false
             }
         ],
