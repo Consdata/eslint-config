@@ -29,6 +29,19 @@ module.exports = {
         "@angular-eslint/no-input-rename": "error",
         "@angular-eslint/no-output-rename": "error",
         "@angular-eslint/use-pipe-transform-interface": "error",
+        "@typescript-eslint/typedef": [
+            "error",
+            {
+                "arrayDestructuring": true,
+                "arrowParameter": true,
+                "memberVariableDeclaration": true,
+                "objectDestructuring": true,
+                "parameter": true,
+                "propertyDeclaration": true,
+                "variableDeclaration": false,
+                "variableDeclarationIgnoreFunction": false
+            }
+        ],
         "@typescript-eslint/consistent-type-definitions": "error",
         "@typescript-eslint/dot-notation": "off",
         "@typescript-eslint/explicit-member-accessibility": [
@@ -152,6 +165,7 @@ module.exports = {
         "no-new-wrappers": "error",
         "no-redeclare": "error",
         "no-throw-literal": "error",
+        "no-whitespace-before-property": "error",
         "no-trailing-spaces": "error",
         "no-underscore-dangle": "off",
         "no-unused-labels": "error",
