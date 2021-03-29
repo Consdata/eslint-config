@@ -124,6 +124,7 @@ module.exports = {
         "@typescript-eslint/no-empty-interface": "error",
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/no-inferrable-types": "off",
+        "no-shadow": "off",
         "@typescript-eslint/no-shadow": [
             "error",
             {
@@ -134,20 +135,29 @@ module.exports = {
         "@typescript-eslint/no-unused-vars": ["error"],
         "no-unused-expressions": "off",
         "@typescript-eslint/no-unused-expressions": "error",
-        "@typescript-eslint/no-use-before-define": "error",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
         "@typescript-eslint/prefer-function-type": "error",
+        "quotes": "off",
         "@typescript-eslint/quotes": [
             "error",
             "single",
             {"allowTemplateLiterals": true}
         ],
+        "semi": "off",
         "@typescript-eslint/semi": [
-            "off",
-            null
+            "error"
         ],
         "@typescript-eslint/type-annotation-spacing": "error",
         "@typescript-eslint/unified-signatures": "error",
-        "brace-style": [
+        "no-redeclare": "off",
+        "@typescript-eslint/no-redeclare": ["error"],
+        "no-loss-of-precision": "off",
+        "@typescript-eslint/no-loss-of-precision": ["error"],
+        "default-param-last": "off",
+        "@typescript-eslint/default-param-last": ["error"],
+        "brace-style": "off",
+        "@typescript-eslint/brace-style": [
             "error",
             "1tbs"
         ],
@@ -176,7 +186,6 @@ module.exports = {
         "no-eval": "error",
         "no-fallthrough": "error",
         "no-new-wrappers": "error",
-        "no-redeclare": "error",
         "no-throw-literal": "error",
         "no-whitespace-before-property": "error",
         "no-trailing-spaces": "error",
