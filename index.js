@@ -118,6 +118,13 @@ module.exports = {
                 "format": [
                     "PascalCase"
                 ]
+            },
+            {
+                "selector": "parameter",
+                "format": [
+                    "camelCase"
+                ],
+                "leadingUnderscore": "allow"
             }
         ],
         "@typescript-eslint/no-empty-function": "off",
@@ -132,7 +139,12 @@ module.exports = {
             }
         ],
         "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": ["error"],
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ],
         "no-unused-expressions": "off",
         "@typescript-eslint/no-unused-expressions": "error",
         "no-use-before-define": "off",
