@@ -5,7 +5,8 @@ module.exports = {
         sourceType: 'module'
     },
     plugins: ['@typescript-eslint',
-        "@angular-eslint/eslint-plugin"],
+        '@angular-eslint/eslint-plugin',
+        'rxjs'],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/eslint-recommended',
@@ -214,6 +215,29 @@ module.exports = {
                     "/"
                 ]
             }
-        ]
+        ],
+        "rxjs/finnish": ["error"],
+        "rxjs/no-async-subscribe": ["error"],
+        "rxjs/no-connectable": ["error"],
+        "rxjs/no-create": ["error"],
+        "rxjs/no-cyclic-action": ["error"],
+        "rxjs/no-exposed-subjects": ["error"],
+        "rxjs/no-ignored-notifier": ["error"],
+        "rxjs/no-ignored-replay-buffer": ["error"],
+        "rxjs/no-implicit-any-catch": ["error"],
+        "rxjs/no-index": ["error"],
+        "rxjs/no-nested-subscribe": ["error"],
+        "rxjs/no-redundant-notify": ["error"],
+        "rxjs/no-sharereplay": [
+            "error",
+            {"allowConfig": true}
+        ],
+        "rxjs/no-subclass": ["error"],
+        "rxjs/no-subject-unsubscribe": ["error"],
+        "rxjs/no-unbound-methods": ["error"],
+        "rxjs/no-unsafe-catch": ["error"],
+        "rxjs/no-unsafe-subject-next": ["error"],
+        "rxjs/no-unsafe-takeuntil": ["error"],
+        "rxjs/throw-error": ["error"]
     }
 };
