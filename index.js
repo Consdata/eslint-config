@@ -1,9 +1,4 @@
 module.exports = {
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: 'module'
-    },
     plugins: ['@typescript-eslint',
         '@angular-eslint/eslint-plugin',
         'rxjs'],
@@ -224,7 +219,10 @@ module.exports = {
         "rxjs/no-exposed-subjects": ["error"],
         "rxjs/no-ignored-notifier": ["error"],
         "rxjs/no-ignored-replay-buffer": ["error"],
-        "rxjs/no-implicit-any-catch": ["error"],
+        "rxjs/no-implicit-any-catch": [
+            "error",
+            { "allowExplicitAny": true }
+        ],
         "rxjs/no-index": ["error"],
         "rxjs/no-nested-subscribe": ["error"],
         "rxjs/no-redundant-notify": ["error"],
