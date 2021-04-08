@@ -1,4 +1,10 @@
 module.exports = {
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: 'module',
+        project: './tsconfig.*?.json'
+    },
     plugins: ['@typescript-eslint',
         '@angular-eslint/eslint-plugin',
         'rxjs'],
@@ -221,7 +227,7 @@ module.exports = {
         "rxjs/no-ignored-replay-buffer": ["error"],
         "rxjs/no-implicit-any-catch": [
             "error",
-            { "allowExplicitAny": true }
+            {"allowExplicitAny": true}
         ],
         "rxjs/no-index": ["error"],
         "rxjs/no-nested-subscribe": ["error"],
