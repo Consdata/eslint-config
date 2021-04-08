@@ -221,14 +221,11 @@ module.exports = {
         "rxjs/no-async-subscribe": ["error"],
         "rxjs/no-connectable": ["error"],
         "rxjs/no-create": ["error"],
-        "rxjs/no-cyclic-action": ["error"],
+        "rxjs/no-cyclic-action": ["off"],
         "rxjs/no-exposed-subjects": ["error"],
         "rxjs/no-ignored-notifier": ["error"],
         "rxjs/no-ignored-replay-buffer": ["error"],
-        "rxjs/no-implicit-any-catch": [
-            "error",
-            {"allowExplicitAny": true}
-        ],
+        "rxjs/no-implicit-any-catch": ["off"],
         "rxjs/no-index": ["error"],
         "rxjs/no-nested-subscribe": ["error"],
         "rxjs/no-redundant-notify": ["error"],
