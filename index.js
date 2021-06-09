@@ -127,6 +127,11 @@ module.exports = {
                     "camelCase"
                 ],
                 "leadingUnderscore": "allow"
+            },
+            {
+                "selector": "variable",
+                "modifiers": ["const"],
+                "format": ["UPPER_CASE", "camelCase"]
             }
         ],
         "@typescript-eslint/no-empty-function": "off",
