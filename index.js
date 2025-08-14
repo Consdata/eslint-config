@@ -5,13 +5,17 @@ module.exports = {
         sourceType: 'module',
         project: './tsconfig.*?.json'
     },
-    plugins: ['@typescript-eslint',
+    plugins: [
+        '@typescript-eslint',
         '@angular-eslint/eslint-plugin',
-        'rxjs'],
+        'rxjs',
+        '@stylistic'
+    ],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended'
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@stylistic/disable-legacy'
     ],
     rules: {
         "@angular-eslint/component-class-suffix": ["error",
@@ -157,17 +161,15 @@ module.exports = {
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
         "@typescript-eslint/prefer-function-type": "error",
-        "quotes": "off",
-        "@typescript-eslint/quotes": [
+        "@stylistic/quotes": [
             "error",
             "single",
             {"allowTemplateLiterals": true}
         ],
-        "semi": "off",
-        "@typescript-eslint/semi": [
+        "@stylistic/semi": [
             "error"
         ],
-        "@typescript-eslint/type-annotation-spacing": "error",
+        "@stylistic/type-annotation-spacing": "error",
         "@typescript-eslint/unified-signatures": "error",
         "no-redeclare": "off",
         "@typescript-eslint/no-redeclare": ["error"],
@@ -175,8 +177,7 @@ module.exports = {
         "@typescript-eslint/no-loss-of-precision": ["error"],
         "default-param-last": "off",
         "@typescript-eslint/default-param-last": ["error"],
-        "brace-style": "off",
-        "@typescript-eslint/brace-style": [
+        "@stylistic/brace-style": [
             "error",
             "1tbs"
         ],
