@@ -1,6 +1,6 @@
 {
   "name": "@consdata/eslint-config",
-  "version": "0.21.0",
+  "version": "1.0.0",
   "description": "Consdata common ESLint rules",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,11 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "@angular-eslint/eslint-plugin": ">=12.3.1",
-    "@typescript-eslint/eslint-plugin": ">=4.29.1",
-    "@typescript-eslint/parser": ">=4.29.1",
-    "eslint": ">=7.32.0",
-    "eslint-plugin-rxjs": ">=3.3.5"
+    "@angular-eslint/eslint-plugin": ">=19.8.1",
+    "@typescript-eslint/eslint-plugin": ">=8.0.0",
+    "@typescript-eslint/parser": ">=8.0.0",
+    "eslint": ">=8.0.0",
+    "eslint-plugin-rxjs": ">=5.0.0",
+    "@stylistic/eslint-plugin": ">=3.1.0"
   }
 }
