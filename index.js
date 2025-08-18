@@ -164,7 +164,7 @@ module.exports = {
         "@stylistic/quotes": [
             "error",
             "single",
-            {"allowTemplateLiterals": true}
+            {"allowTemplateLiterals": "always"}
         ],
         "@stylistic/semi": [
             "error"
