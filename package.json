@@ -2,7 +2,13 @@
   "name": "@consdata/eslint-config",
   "version": "2.0.0",
   "description": "Consdata common ESLint rules (flat config)",
-  "main": "index.js",
+  "main": "index.cjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "release": "npm version minor && git push --all && npm publish --access public"
