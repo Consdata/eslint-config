@@ -304,7 +304,20 @@ Pełna lista: https://eslint.org/docs/latest/use/migrate-to-9.0.0#removed-contex
 
 ---
 
-## 7. Weryfikacja po migracji
+## 7. Aktualizacja deprecated reguł ESLint core
+
+W wersji 2.x.y zmieniono nazwy deprecated reguł na ich aktualne odpowiedniki. Lista deprecated reguł: https://eslint.org/docs/latest/rules/.
+
+| Stara nazwa (deprecated) | Nowa nazwa |
+|---|---|
+| `id-blacklist` | `id-denylist` |
+| `eol-last` | `@stylistic/eol-last` |
+| `max-len` | `@stylistic/max-len` |
+| `no-trailing-spaces` | `@stylistic/no-trailing-spaces` |
+| `no-whitespace-before-property` | `@stylistic/no-whitespace-before-property` |
+| `spaced-comment` | `@stylistic/spaced-comment` |
+
+---
 
 ### 7.1 Uruchomienie lint
 

@@ -35,16 +35,16 @@ module.exports = [
                 "1tbs"
             ],
             "curly": "error",
-            "eol-last": "error",
+            "@stylistic/eol-last": "error",
             "eqeqeq": [
                 "error",
                 "smart"
             ],
             "guard-for-in": "error",
-            "id-blacklist": "off",
+            "id-denylist": "off",
             "id-match": "off",
             "no-prototype-builtins": "off",
-            "max-len": [
+            "@stylistic/max-len": [
                 "error",
                 {
                     "ignorePattern": "^import [^,]+ from",
@@ -60,14 +60,14 @@ module.exports = [
             "no-fallthrough": "error",
             "no-new-wrappers": "error",
             "no-throw-literal": "error",
-            "no-whitespace-before-property": "error",
-            "no-trailing-spaces": "error",
+            "@stylistic/no-whitespace-before-property": "error",
+            "@stylistic/no-trailing-spaces": "error",
             "no-underscore-dangle": "off",
             "no-unused-labels": "error",
             "no-var": "error",
             "prefer-const": "error",
             "radix": "error",
-            "spaced-comment": [
+            "@stylistic/spaced-comment": [
                 "error",
                 "always",
                 {
