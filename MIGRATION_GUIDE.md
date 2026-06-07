@@ -316,6 +316,7 @@ W wersji 2.x.y zmieniono nazwy deprecated reguł na ich aktualne odpowiedniki. L
 | `no-trailing-spaces` | `@stylistic/no-trailing-spaces` |
 | `no-whitespace-before-property` | `@stylistic/no-whitespace-before-property` |
 | `spaced-comment` | `@stylistic/spaced-comment` |
+| `@typescript-eslint/no-empty-interface` | `@typescript-eslint/no-empty-object-type` |
 
 ---
 
