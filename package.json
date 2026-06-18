@@ -1,8 +1,14 @@
 {
   "name": "@consdata/eslint-config",
-  "version": "1.1.0",
-  "description": "Consdata common ESLint rules",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Consdata common ESLint rules (flat config)",
+  "main": "index.cjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "release": "npm version minor && git push --all && npm publish --access public"
@@ -15,11 +21,13 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "@angular-eslint/eslint-plugin": ">=19.8.1",
+    "@angular-eslint/eslint-plugin": ">=19.0.0",
     "@typescript-eslint/eslint-plugin": ">=8.0.0",
     "@typescript-eslint/parser": ">=8.0.0",
-    "eslint": ">=8.0.0",
-    "eslint-plugin-rxjs": ">=5.0.0",
-    "@stylistic/eslint-plugin": ">=3.1.0"
+    "typescript-eslint": ">=8.0.0",
+    "eslint": ">=9.0.0",
+    "@eslint/js": ">=9.0.0",
+    "@smarttools/eslint-plugin-rxjs": ">=1.0.0",
+    "@stylistic/eslint-plugin": ">=5.0.0"
   }
 }
