@@ -6,7 +6,7 @@ Consdata eslint rules
 
 https://www.npmjs.com/package/@consdata/eslint-config
 
-# Pulish
+# Publikacja
 
 ## Zmiana wersji
 
